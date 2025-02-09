@@ -17,3 +17,4 @@ Route::get('{any}', function () {
 })->where('any', '.*');
 
 Route::post('/submit-form',[ContactControlle::class,'contact_submit'])->name('submit_form');
+Route::post('/contact-form-list',[ContactControlle::class,'contact_list'])->name('contact_list');
